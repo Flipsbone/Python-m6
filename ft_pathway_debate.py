@@ -29,7 +29,7 @@ def main() -> None:
     absolute_imports()
     relative_imports()
     package_access()
-
+    print("\nBoth pathways work! Absolute: clear, Relative: concise")
 
 if __name__ == "__main__":
     main()
