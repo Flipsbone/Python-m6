@@ -1,4 +1,7 @@
+#!/user/bin/env python 3
+
 import alchemy.grimoire
+
 
 def ingredient_validation() -> None:
     print("Testing ingredient validation:")
@@ -8,6 +11,7 @@ def ingredient_validation() -> None:
     ingredients = "dragon scales"
     result = alchemy.grimoire.validate_ingredients(ingredients)
     print(f'validate_ingredients("fire air"): {ingredients} - {result}')
+
 
 def spell_validation() -> None:
     print("\nTesting spell recording with validation:")
@@ -29,6 +33,7 @@ def late_import_validation() -> None:
     result = alchemy.grimoire.record_spell(spell, ingredients)
     print(f'record_spell("{spell}", "{ingredients}"): {result}')
 
+
 def main():
     print("=== Circular Curse Breaking ===")
 
@@ -40,5 +45,7 @@ def main():
         print(f"\nUNEXPECTED ERROR: {e}")
 
     print("\nAll spells processed safely!")
+
+
 if __name__ == "__main__":
     main()

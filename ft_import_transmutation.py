@@ -1,3 +1,5 @@
+#!/user/bin/env python 3
+
 def multiple_import() -> None:
     from alchemy.elements import create_fire, create_earth
     from alchemy.potions import strength_potion

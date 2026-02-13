@@ -1,3 +1,4 @@
+#!/user/bin/env python 3
 
 def package_access():
     import alchemy.transmutation
@@ -26,10 +27,14 @@ def absolute_imports() -> None:
 
 def main() -> None:
     print("=== Pathway Debate Mastery ===")
-    absolute_imports()
-    relative_imports()
-    package_access()
+    try:
+        absolute_imports()
+        relative_imports()
+        package_access()
+    except (AttributeError, ImportError) as e:
+        print(f"{e}")
     print("\nBoth pathways work! Absolute: clear, Relative: concise")
+
 
 if __name__ == "__main__":
     main()
