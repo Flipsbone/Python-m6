@@ -1,4 +1,4 @@
-#!/user/bin/env python 3
+#!/usr/bin/env python3
 
 def multiple_import() -> None:
     from alchemy.elements import create_fire, create_earth

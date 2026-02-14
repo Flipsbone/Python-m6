@@ -1,11 +1,11 @@
-#!/user/bin/env python 3
+#!/usr/bin/env python3
 
 def package_access():
     import alchemy.transmutation
     print("\nTesting Package Access:")
-    print("alchemy.transmutation.lead_to_gold():"
+    print("alchemy.transmutation.lead_to_gold(): "
           f"{alchemy.transmutation.lead_to_gold()}")
-    print("alchemy.transmutation.philosophers_stone():"
+    print("alchemy.transmutation.philosophers_stone(): "
           f"{alchemy.transmutation.philosophers_stone()}")
 
 

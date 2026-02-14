@@ -1,4 +1,4 @@
-#!/user/bin/env python 3
+#!/usr/bin/env python3
 
 import alchemy.grimoire
 
@@ -7,10 +7,10 @@ def ingredient_validation() -> None:
     print("Testing ingredient validation:")
     ingredients = "fire air"
     result = alchemy.grimoire.validate_ingredients(ingredients)
-    print(f'validate_ingredients("fire air"): {ingredients} - {result}')
+    print(f'validate_ingredients("{ingredients}"): {result}')
     ingredients = "dragon scales"
     result = alchemy.grimoire.validate_ingredients(ingredients)
-    print(f'validate_ingredients("fire air"): {ingredients} - {result}')
+    print(f'validate_ingredients("{ingredients}"): {result}')
 
 
 def spell_validation() -> None:
