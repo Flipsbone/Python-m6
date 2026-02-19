@@ -1,5 +1,5 @@
 from .spellbook import record_spell
-__all__ = record_spell
+__all__ = ['record_spell']
 
 
 def validate_ingredients(ingredients: str) -> str:

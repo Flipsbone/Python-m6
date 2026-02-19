@@ -42,7 +42,7 @@ def main() -> None:
 
     try:
         print("alchemy.create_air():", alchemy.create_air())
-    except (AttributeError, ImportError):
+    except AttributeError:
         print("alchemy.create_air(): AttributeError - not exposed")
 
     print("\nPackage metadata:")
